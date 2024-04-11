@@ -1,20 +1,18 @@
-
 import 'package:edge/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:persistent_shopping_cart/persistent_shopping_cart.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+void main() async {
+  await PersistentShoppingCart().init();
+  runApp(
+    MaterialApp(
+      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'mont'),
+      theme: ThemeData(
+        useMaterial3: true,
+        fontFamily: 'mont',
+      ),
       home: MyHomePage(),
-    );
-  }
+    ),
+  );
 }
-

@@ -1,5 +1,5 @@
 import 'package:edge/Style.dart';
-import 'package:edge/cartPage.dart';
+import 'package:edge/productscreen.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantPage extends StatelessWidget {
@@ -233,7 +233,7 @@ class _hotelPageState extends State<hotelPage> {
                   Column(
                     children: [
                       InkWell(
-                        onTap: openCartPage,
+                        onTap: openProductsScreen,
                         child: Container(
                           padding: EdgeInsets.symmetric(
                               horizontal: 30, vertical: 10),
@@ -387,8 +387,8 @@ class _hotelPageState extends State<hotelPage> {
     );
   }
 
-  void openCartPage() {
+  void openProductsScreen() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => CartPage()));
+        context, MaterialPageRoute(builder: (context) => ProductsScreen()));
   }
 }

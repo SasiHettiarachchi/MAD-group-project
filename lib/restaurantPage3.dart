@@ -1,5 +1,4 @@
 import 'package:edge/Style.dart';
-import 'package:edge/cartPage.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantPage3 extends StatelessWidget {
@@ -229,7 +228,7 @@ class _hotelPage3State extends State<hotelPage3> {
                   Column(
                     children: [
                       InkWell(
-                        onTap: openCartPage,
+                        onTap: () {},
                         child: Container(
                           padding: EdgeInsets.symmetric(
                               horizontal: 30, vertical: 10),
@@ -241,13 +240,8 @@ class _hotelPage3State extends State<hotelPage3> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(
-                                  Icons.add_shopping_cart,
-                                  color: Colors.white,
-                                  size: 18,
-                                ),
                                 Text(
-                                  " CART",
+                                  " More>>",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 13,
@@ -378,10 +372,5 @@ class _hotelPage3State extends State<hotelPage3> {
         )
       ],
     );
-  }
-
-  void openCartPage() {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => CartPage()));
   }
 }
