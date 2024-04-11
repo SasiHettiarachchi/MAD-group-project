@@ -245,13 +245,8 @@ class _hotelPageState extends State<hotelPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Icon(
-                                  Icons.add_shopping_cart,
-                                  color: Colors.white,
-                                  size: 18,
-                                ),
                                 Text(
-                                  " CART",
+                                  " MORE>>",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 13,
