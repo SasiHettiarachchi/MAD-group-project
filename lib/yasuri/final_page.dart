@@ -11,7 +11,7 @@ class _FinalPageState extends State<FinalPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: new Color(0xFFD80000),
       body: const SafeArea(
         child: Center(
           child: Column(
@@ -20,7 +20,7 @@ class _FinalPageState extends State<FinalPage> {
               Icon(
                 Icons.check_circle,
                 size: 60, // Adjust size as needed
-                color: Colors.green,
+                color: Colors.white,
               ),
               SizedBox(
                 height: 10,
@@ -30,7 +30,7 @@ class _FinalPageState extends State<FinalPage> {
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                   letterSpacing: 1.0,
                 ),
               ),
@@ -39,7 +39,7 @@ class _FinalPageState extends State<FinalPage> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                   letterSpacing: 1.0,
                 ),
               ),
@@ -48,7 +48,7 @@ class _FinalPageState extends State<FinalPage> {
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                   letterSpacing: 1.0,
                 ),
               ),
@@ -57,7 +57,7 @@ class _FinalPageState extends State<FinalPage> {
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Colors.white,
                   letterSpacing: 1.0,
                 ),
               ),

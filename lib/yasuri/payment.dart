@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'final-page.dart';
+import 'final_page.dart';
 
 class PaymentPage extends StatefulWidget {
   const PaymentPage({Key? key}) : super(key: key);
@@ -26,7 +26,7 @@ class _PaymentPageState extends State<PaymentPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[800],
+      backgroundColor: new Color(0xFFD80000),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -270,7 +270,7 @@ class _PaymentPageState extends State<PaymentPage> {
                               child: Container(
                                 padding: const EdgeInsets.all(15),
                                 decoration: BoxDecoration(
-                                  color: Colors.blue,
+                                  color: new Color(0xFFd80000),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 child: const Text(
